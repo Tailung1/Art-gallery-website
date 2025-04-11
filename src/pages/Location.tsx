@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 // import { useTheme } from "../useProvider";
 
 export default function Location() {
-  // const {theme,toggleTheme}=useTheme()
+    // const {theme,toggleTheme}=useTheme()
   return (
     <div className='flex flex-col justify-center items-center  h-full'>
       {/* <button onClick={toggleTheme}>Chnage Theme</button> */}
@@ -16,7 +16,9 @@ export default function Location() {
           </Link>
           <div className=' bg-[#151515] py-6  px-8 '>
             {/* ${theme === "light" ? "text-white" : "text-red-600"} */}
-            <p className='text-base  text-white  font-[800] tracking-[3.636px]'>
+            <p
+              className="text-base  text-white  font-[800] tracking-[3.636px]"
+            >
               BACK TO HOME
             </p>
           </div>

@@ -1,11 +1,23 @@
+import { useLocation } from "react-router-dom";
+
 export default function Footer() {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+  const HomeFooterBG = isHomePage ? "bg-[#151515]" : "bg - [#D5966C]";
+  const HomeFooterElementBG = isHomePage ? "bg-white" : "bg - black";
+  const HomeFooterColor = isHomePage ? "text-white" : "text-black";
   return (
     <>
       <div className='flex  justify-center items-center'>
         {" "}
-        <div className='bg-[#D5966C] relative flex flex-col gap-[38px] py-12 px-6  md:flex-row md:items-start  md:w-full '>
-          <div className='flex flex-col gap-[38px] md:flex-row md:gap-[114.95px]'>
+        <div
+          className={`${HomeFooterBG} relative flex flex-col gap-[38px] py-12 px-6   md:flex-row md:items-start  md:w-full`}
+        >
+          <div
+            className={`flex flex-col gap-[38px]  md:flex-row md:gap-[114.95px]`}
+          >
             <svg
+              className={`${HomeFooterElementBG}`}
               xmlns='http://www.w3.org/2000/svg'
               width='111'
               height='40'
@@ -19,14 +31,16 @@ export default function Footer() {
                 fill='#151515'
               />
             </svg>
-            <p className='text-[#151515] text-base font-[400] leading-[26px]  md:w-[281px]'>
+            <p
+              className={`text-[#151515] text-base font-[400] leading-[26px] ${HomeFooterColor}  md:w-[281px]`}
+            >
               The Modern Art Gallery is free to all visitors and open
               seven days a week from 8am to 9pm. Find us at 99 King
               Street, Newport, USA.
             </p>
           </div>
           <img
-            className='w-[100px] h-15 md:absolute md:right-10'
+            className={`w-[100px] h-15 md:absolute ${HomeFooterElementBG} md:right-10`}
             src='/Group 9.svg'
             alt=''
           />
