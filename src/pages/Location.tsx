@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import { useTheme } from "../useProvider";
+// import { useTheme } from "../useProvider";
 
 export default function Location() {
-    const {theme,toggleTheme}=useTheme()
+  // const {theme,toggleTheme}=useTheme()
   return (
     <div className='flex flex-col justify-center items-center  h-full'>
-        <button onClick={toggleTheme}>Chnage Theme</button>
+      {/* <button onClick={toggleTheme}>Chnage Theme</button> */}
       <div className="bg-[url('/mobile/image-map.png')]  bg-no-repeat  bg-contain bg-center relative h-[550px] w-full md:bg-[url('/tablet/image-map.png')]">
         <div className='flex h-[72px] md:absolute  md:left-8'>
           <Link
@@ -15,7 +15,8 @@ export default function Location() {
             <img src='/icon-arrow-left.svg' alt='arrow icon' />
           </Link>
           <div className=' bg-[#151515] py-6  px-8 '>
-            <p className={`text-base ${theme==="light"?"text-white":"text-red-600"}   font-[800] tracking-[3.636px] `} >
+            {/* ${theme === "light" ? "text-white" : "text-red-600"} */}
+            <p className='text-base  text-white  font-[800] tracking-[3.636px]'>
               BACK TO HOME
             </p>
           </div>
