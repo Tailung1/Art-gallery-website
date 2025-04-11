@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Location() {
   return (
     <div className='flex flex-col justify-center items-center  h-full'>
-      <div className="bg-[url('/mobile/image-map.png')] bg-no-repeat bg-cover relative h-[550px] w-full md:bg-[url('/tablet/image-map.png')]">
+      <div className="bg-[url('/mobile/image-map.png')]  bg-no-repeat  bg-contain bg-center relative h-[550px] w-full md:bg-[url('/tablet/image-map.png')]">
         <div className='flex h-[72px] md:absolute  md:left-8'>
           <Link
             to={"/"}
