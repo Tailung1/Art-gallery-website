@@ -6,7 +6,7 @@ import {
 import Home from "./pages/Home";
 import Location from "./pages/Location";
 import NotFound from "./pages/NotFound";
-import Footer from "./pages/Footer"; // Import Footer
+import Footer from "./Footer";
 
 const router = createBrowserRouter([
   {
