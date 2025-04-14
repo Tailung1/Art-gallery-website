@@ -13,7 +13,7 @@ export default function Home() {
           className='text-[70px] absolute left-[165px] top-[189px] font-[900] leading-[88px] '
           style={{
             background:
-              "linear-gradient(to right, white 0%, white 45%, black 55%,)",
+              "linear-gradient(to right, white 0%, white 61%, black 55%,black 100%",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
           }}
